@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movieez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #ffcc00;
+            text-align: center;
+        }
+
+        .film-container {
+            text-align: center;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            width: 640px; /* Video genişliği */
+            max-width: 100%;
+        }
+
+        .film-container iframe {
+            width: 100%;
+            height: 360px; /* Video yüksekliği */
+            border-radius: 8px;
+        }
+
+        .film-container p {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .download-link {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .download-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Knuckledust Fight Club</h1>
+    <div class="film-container">
+        <iframe src="https://drive.google.com/file/d/1l673MStAb7RowL-TV175LgXlcBwD6UaM/preview" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p>Keyifli seyirler!</p>
+        <a href="https://drive.google.com/uc?export=download&id=1l673MStAb7RowL-TV175LgXlcBwD6UaM" class="download-link" target="_blank">Film İndir</a>
+    </div>
+</body>
+</html>
